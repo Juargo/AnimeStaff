@@ -1,0 +1,19 @@
+[{
+		"nombre": "One Piece",
+		"logo": "imgs/OnePiece/logochico.png",
+		"descripcion": "",
+		"ncapitulos":870,
+		"ntomos":80,
+		"tomos": [{
+			"numero": 1,
+			"saga": "Romance Down",
+			"img":"imgs/OnePiece/1.png",
+			"capitulos": [{
+				"numero": 1,
+				"nombre": "Romance Dawn – Amanecer de la aventura"
+			}, {
+				"numero": 2,
+				"nombre": "Ese chico, 'Luffy Sombrero de Paja'"
+			}]
+		}]
+}]
