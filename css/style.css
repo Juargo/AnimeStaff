@@ -1,3 +1,62 @@
 .img-rounded{
 	width: 100%;
 }
+#componentes>.col-lg-4>.panel-primary{
+	height: 290px;
+	width: 607px;
+}
+.anime-section{
+	padding:0px ;
+	max-width: 303px;
+	max-height: 180px;
+}
+.manga-section{
+	padding:0px ;
+	max-width: 303px;
+	max-height: 180px;
+}
+.anime-section>.panel{
+	margin:0px;
+}
+.anime-section>.panel>.panel-body{
+	padding: 0px;
+	max-width: 303px;
+	max-height: 180px;
+}
+.anime-section>.panel>.panel-body>img{
+	padding: 0px;
+	max-width: 303px;
+	max-height: 180px;
+}
+.manga-section>.panel{
+	margin:0px;
+}
+
+.manga-section>.panel>.panel-body{
+	padding: 0px;
+	max-width: 303px;
+	max-height: 180px;
+}
+
+.manga-section>.panel>.panel-body>img{
+	padding: 0px;
+	max-width: 303px;
+	max-height: 180px;
+}
+.panel-series{
+	padding-bottom:0px 0px 0px 14px ;
+}
+.categorias-head{
+	height: 50px;
+	padding: 5px 0px 0px 5px;
+}
+.categoria-section{
+	padding: 0px;
+}
+
+.titulo-serie{
+	float: right;
+	font-size: 30px;
+	margin-right: 20px;
+
+}
