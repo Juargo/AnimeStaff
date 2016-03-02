@@ -1,5 +1,16 @@
 .img-rounded{
-	width: 100%;
+	
+	width: 303px;
+	height: 180px;
+	
+}
+.img-serie{
+	background-image: url("/AnimeStuff/imgs/OnePiece/principal-anime.jpg");
+	background-size: cover;
+}
+.img-manga{
+	background-image: url("/AnimeStuff/imgs/OnePiece/principal-manga.jpg");
+	background-size: cover;
 }
 /*Panel del Componente*/
 #container-componentes>.columna-componente>.panel-componente{
@@ -16,7 +27,6 @@
 	float: right;
 	font-size: 30px;
 	margin-right: 20px;
-
 }
 
 /*Body de Panel del componente*/
