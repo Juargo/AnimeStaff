@@ -1,62 +1,31 @@
-.img-rounded{
-	
-	width: 303px;
-	height: 180px;
-	
+.columna-componente{
+	/*border: 2px blue solid;*/
+    height: 133px;
+    width: 210px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding:0px;
 }
-.img-serie{
-	background-image: url("/AnimeStuff/imgs/OnePiece/principal-anime.jpg");
-	background-size: cover;
+.panel-componente{
+	/*border: 2px red solid;*/
+    height: 100%;
+    width: 100%;
 }
-.img-manga{
-	background-image: url("/AnimeStuff/imgs/OnePiece/principal-manga.jpg");
-	background-size: cover;
-}
-/*Panel del Componente*/
-#container-componentes>.columna-componente>.panel-componente{
-	height: 290px;
-	width: 607px;
-}
-
-/*Head de Panel del componente*/
 .categorias-head{
-	height: 50px;
-	padding: 5px 0px 0px 5px;
+	/*border: 2px grey solid;*/
+	height: 26%;
 }
-.titulo-serie{
-	float: right;
-	font-size: 30px;
-	margin-right: 20px;
+.body-series{
+	/*border: 2px green solid;*/
+	height: 77%;
+	padding: 0px
 }
-
-/*Body de Panel del componente*/
-.panel-series{
-	padding-bottom:0px 0px 0px 14px ;
-}
-
 
 .serie-section{
-	padding:0px ;
-	max-width: 303px;
-	max-height: 180px;
-}
-
-.serie-section>.panel{
-	margin:0px;
-}
-.serie-section>.panel>.img-serie{
-	padding: 0px;
-	max-width: 303px;
-	max-height: 180px;
-}
-.serie-section>.panel>.img-serie>img{
-	padding: 0px;
-	max-width: 303px;
-	max-height: 180px;
-}
-
-
-.categoria-section{
+	border: 2px grey solid;
+	height: 100%;
 	padding: 0px;
 }
-
+.img-serie{
+	height: 79%;
+}
