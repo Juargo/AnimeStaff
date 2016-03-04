@@ -1,116 +1,46 @@
 $(document).ready(function(){
-
 	$(".serie-section").hover(function(){
-		var escogido=$(this);
-		var thover=140;
-		var tnhover=67;
-		var original=104;
-		if(escogido.hasClass("anime-s")){
-			var noescogido=$(this).next();
-			var tescogido=escogido.css("width").split("p")[0];
-			var tnoescogido=noescogido.css("width").split("p")[0];
-			var idizquierdo = setInterval(framein,8);
-			function framein(){
-				if(tescogido == thover){
-						clearInterval(idizquierdo);
-					}else{
-						tescogido++;
-						tnoescogido--;
-						pxescogido=tescogido + 'px';
-						pxnoescogido=tnoescogido + 'px';
-						escogido.css('width', pxescogido);
-						noescogido.css('width',pxnoescogido);
-					}
+		//var whoverthis=$(this).css("width").split("p")[0]; /*width actual del escogido*/
+		/*Set inicial*/
+		var es = $(this); /*objeto escogido*/
+		var init = 104; /*width original*/
+		var whover = 140; /*width del hover*/
+		var hnhover = 67; /*widht del no hover*/
+		var shover = init;
+		var nhover = init;
+		var id = setInterval(function(){
+			if(shover>=whover){
+				clearInterval(id);
+			}else{
+				shover++;
+				nhover--;
+				es.css('width',shover + "px");
+				if (es.hasClass("anime-s")){
+					es.next().css("width",nhover + "px");
+				}else if (es.hasClass("manga-s")){
+					es.prev().css("width",nhover + "px");
 				}
-				//escogido.css('width','70%');
-				//noescogido.css('width','20%')
-				//noescogido.animate({
-				//	width:"20%"
-				//})
-				//escogido.animate({
-				//	width:"70%"
-				//})
-			}else if(escogido.hasClass("manga-s")){
-				noescogido=$(this).prev();
-				var idderecho = setInterval(framein,8);
-				var tescogido=escogido.css("width").split("p")[0];
-				var tnoescogido=noescogido.css("width").split("p")[0];
-				function framein(){
-					if(tescogido == thover){
-						clearInterval(idderecho);
-					}else{
-						tescogido++;
-						tnoescogido--;
-						pxescogido=tescogido + 'px';
-						pxnoescogido=tnoescogido + "px";
-						escogido.css('width', pxescogido);
-						noescogido.css('width',pxnoescogido);
-					}
-				}
-				//escogido.css('width','70%');
-				//noescogido.css('width','20%')
-				//noescogido.animate({
-				//	width:"20%"
-				//})
-				//escogido.animate({
-				//	width:"70%"
-				//})
 			}
+		},15)
+
 	},function(){
-		var thover=140;
-		var tnhover=67;
-		var original=104;
-		var escogido=$(this);
-		if(escogido.hasClass("anime-s")){
-			var noescogido=$(this).next();
-			var id = setInterval(frameout,8);
-			var tescogido=escogido.css("width").split("p")[0];
-			var tnoescogido=noescogido.css("width").split("p")[0];
-			function frameout(){
-				if(tescogido == original){
-					clearInterval(id);
-				}else{
-					tescogido--;
-					tnoescogido++;
-					pxescogido=tescogido + 'px';
-					pxnoescogido=tnoescogido + 'px';
-					escogido.css('width', pxescogido);
-					noescogido.css('width',pxnoescogido);
-				}
+		/*Set inicial*/
+		var es = $(this); /*objeto escogido*/
+		var init = 104; /*width original*/
+		var whover = 140; /*width del hover*/
+		var hnhover = 67; /*widht del no hover*/
+		var shover = whover;
+		var nhover = hnhover;
+		var id = setInterval(function(){
+			if(shover<=init){
+				clearInterval(id);
+			}else{
+				shover--;
+				nhover++;
+				es.css('width',shover + "px");
+				es.next().css("width",nhover + "px");
 			}
-			//escogido.css('width','49%');
-			//noescogido.css('width','49%')
-			//noescogido.animate({
-			//	width:"49%"
-			//})
-			//escogido.animate({
-			//	width:"49%"
-			//})
-		}else if(escogido.hasClass("manga-s")){
-			var noescogido=$(this).prev();
-			var id = setInterval(frameout,8);
-			var tescogido=escogido.css("width").split("p")[0];
-			var tnoescogido=noescogido.css("width").split("p")[0];
-			function frameout(){
-				if(tescogido == original){
-					clearInterval(id);
-				}else{
-					tescogido--;
-					tnoescogido++;
-					pxescogido=tescogido + 'px';
-					pxnoescogido=tnoescogido + 'px';
-					escogido.css('width', pxescogido);
-					noescogido.css('width',pxnoescogido);
-				}
-			}
-				//escogido.css('width','70%');
-				//noescogido.css('width','20%')
-				//noescogido.animate({
-				//	width:"20%"
-				//})
-				//escogido.animate({
-				//	width:"70%"
-				//})
-			}
+		},15)
 	});
+	
 });
