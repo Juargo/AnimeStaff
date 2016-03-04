@@ -17,15 +17,15 @@
 }
 .body-series{
 	/*border: 2px green solid;*/
-	height: 77%;
+	height: 73%;
 	padding: 0px
 }
 
 .serie-section{
-	border: 2px grey solid;
+	border: 2px red solid;
 	height: 100%;
 	padding: 0px;
-	width: 49%;
+	width: 104px;
 }
 .img-serie{
 	height: 79%;

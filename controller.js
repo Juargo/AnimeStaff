@@ -2,19 +2,22 @@ $(document).ready(function(){
 
 	$(".serie-section").hover(function(){
 		var escogido=$(this);
-			if(escogido.hasClass("anime-s")){
-				var noescogido=$(this).next();
-				var id = setInterval(framein,15);
-				var tescogido=49;
-				var tnoescogido=49;
-				function framein(){
-					if(tescogido == 70){
-						clearInterval(id);
+		var thover=140;
+		var tnhover=67;
+		var original=104;
+		if(escogido.hasClass("anime-s")){
+			var noescogido=$(this).next();
+			var tescogido=escogido.css("width").split("p")[0];
+			var tnoescogido=noescogido.css("width").split("p")[0];
+			var idizquierdo = setInterval(framein,8);
+			function framein(){
+				if(tescogido == thover){
+						clearInterval(idizquierdo);
 					}else{
 						tescogido++;
 						tnoescogido--;
-						pxescogido=tescogido + '%';
-						pxnoescogido=tnoescogido + '%';
+						pxescogido=tescogido + 'px';
+						pxnoescogido=tnoescogido + 'px';
 						escogido.css('width', pxescogido);
 						noescogido.css('width',pxnoescogido);
 					}
@@ -29,17 +32,17 @@ $(document).ready(function(){
 				//})
 			}else if(escogido.hasClass("manga-s")){
 				noescogido=$(this).prev();
-				var id = setInterval(framein,15);
-				var tescogido=49;
-				var tnoescogido=49;
+				var idderecho = setInterval(framein,8);
+				var tescogido=escogido.css("width").split("p")[0];
+				var tnoescogido=noescogido.css("width").split("p")[0];
 				function framein(){
-					if(tescogido == 70){
-						clearInterval(id);
+					if(tescogido == thover){
+						clearInterval(idderecho);
 					}else{
 						tescogido++;
 						tnoescogido--;
-						pxescogido=tescogido + '%';
-						pxnoescogido=tnoescogido + '%';
+						pxescogido=tescogido + 'px';
+						pxnoescogido=tnoescogido + "px";
 						escogido.css('width', pxescogido);
 						noescogido.css('width',pxnoescogido);
 					}
@@ -54,21 +57,23 @@ $(document).ready(function(){
 				//})
 			}
 	},function(){
-
-			var escogido=$(this);
+		var thover=140;
+		var tnhover=67;
+		var original=104;
+		var escogido=$(this);
 		if(escogido.hasClass("anime-s")){
 			var noescogido=$(this).next();
-			var id = setInterval(frameout,15);
-			var tescogido=70;
-			var tnoescogido=20;
+			var id = setInterval(frameout,8);
+			var tescogido=escogido.css("width").split("p")[0];
+			var tnoescogido=noescogido.css("width").split("p")[0];
 			function frameout(){
-				if(tescogido == 49){
+				if(tescogido == original){
 					clearInterval(id);
 				}else{
 					tescogido--;
 					tnoescogido++;
-					pxescogido=tescogido + '%';
-					pxnoescogido=tnoescogido + '%';
+					pxescogido=tescogido + 'px';
+					pxnoescogido=tnoescogido + 'px';
 					escogido.css('width', pxescogido);
 					noescogido.css('width',pxnoescogido);
 				}
@@ -81,19 +86,19 @@ $(document).ready(function(){
 			//escogido.animate({
 			//	width:"49%"
 			//})
-			}else if(escogido.hasClass("manga-s")){
-				var noescogido=$(this).prev();
-			var id = setInterval(frameout,15);
-			var tescogido=70;
-			var tnoescogido=20;
+		}else if(escogido.hasClass("manga-s")){
+			var noescogido=$(this).prev();
+			var id = setInterval(frameout,8);
+			var tescogido=escogido.css("width").split("p")[0];
+			var tnoescogido=noescogido.css("width").split("p")[0];
 			function frameout(){
-				if(tescogido == 49){
+				if(tescogido == original){
 					clearInterval(id);
 				}else{
 					tescogido--;
 					tnoescogido++;
-					pxescogido=tescogido + '%';
-					pxnoescogido=tnoescogido + '%';
+					pxescogido=tescogido + 'px';
+					pxnoescogido=tnoescogido + 'px';
 					escogido.css('width', pxescogido);
 					noescogido.css('width',pxnoescogido);
 				}
