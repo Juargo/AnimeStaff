@@ -22,17 +22,24 @@
 }
 
 .serie-section{
-	border: 2px red solid;
+	/*border: 2px red solid;*/
 	height: 100%;
 	padding: 0px;
 	width: 104px;
 }
 .img-serie{
 	height: 79%;
+	padding: 0px;
 }
-.manga-s{
-	color:red;
+.img-anime{
+	background-image: url("/AnimeStuff/imgs/OnePiece/principal-anime.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
 }
-anime-s{
-	color:blue;
+.img-manga{
+	background-image: url("/AnimeStuff/imgs/OnePiece/principal-manga.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
 }

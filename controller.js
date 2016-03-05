@@ -8,9 +8,9 @@ $(document).ready(function(){
 		var hnhover = 67; /*widht del no hover*/
 		var shover = init;
 		var nhover = init;
-		var id = setInterval(function(){
+		var idhover = setInterval(function(){
 			if(shover>=whover){
-				clearInterval(id);
+				clearInterval(idhover);
 			}else{
 				shover++;
 				nhover--;
@@ -31,14 +31,19 @@ $(document).ready(function(){
 		var hnhover = 67; /*widht del no hover*/
 		var shover = whover;
 		var nhover = hnhover;
-		var id = setInterval(function(){
+		var idnhover = setInterval(function(){
 			if(shover<=init){
-				clearInterval(id);
+				clearInterval(idnhover);
 			}else{
 				shover--;
 				nhover++;
 				es.css('width',shover + "px");
-				es.next().css("width",nhover + "px");
+				if (es.hasClass("anime-s")){
+					es.next().css("width",nhover + "px");
+					console.log(nhover)
+				}else if (es.hasClass("manga-s")){
+					es.prev().css("width",nhover + "px");
+				}
 			}
 		},15)
 	});
