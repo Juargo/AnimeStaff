@@ -3,9 +3,9 @@ $(document).ready(function(){
 		//var whoverthis=$(this).css("width").split("p")[0]; /*width actual del escogido*/
 		/*Set inicial*/
 		var es = $(this); /*objeto escogido*/
-		var init = 104; /*width original*/
-		var whover = 140; /*width del hover*/
-		var hnhover = 67; /*widht del no hover*/
+		var init = 160; /*width original*/
+		var whover = 250; /*width del hover*/
+		var hnhover = 70; /*widht del no hover*/
 		var shover = init;
 		var nhover = init;
 		var idhover = setInterval(function(){
@@ -21,14 +21,14 @@ $(document).ready(function(){
 					es.prev().css("width",nhover + "px");
 				}
 			}
-		},15)
+		},300)
 
 	},function(){
 		/*Set inicial*/
 		var es = $(this); /*objeto escogido*/
-		var init = 104; /*width original*/
-		var whover = 140; /*width del hover*/
-		var hnhover = 67; /*widht del no hover*/
+		var init = 160; /*width original*/
+		var whover = 250; /*width del hover*/
+		var hnhover = 70; /*widht del no hover*/
 		var shover = whover;
 		var nhover = hnhover;
 		var idnhover = setInterval(function(){
@@ -45,7 +45,7 @@ $(document).ready(function(){
 					es.prev().css("width",nhover + "px");
 				}
 			}
-		},15)
+		},300)
 	});
 	
 });
