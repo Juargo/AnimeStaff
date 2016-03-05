@@ -1,3 +1,31 @@
 .img-rounded{
 	width: 100%;
 }
+.container-fotos{
+	width: 100%;
+	height: 100%;
+}
+.opciones{
+	width: 439px;
+	height:100px;
+	float: left;
+}
+.anime{
+	background-image: url("/AnimeStuff/imgs/anime.jpg");
+	background-size: cover;
+	height: 560px;
+    width: 441px;
+    background-position: -226px;
+}
+.serie{
+	background-image: url("/AnimeStuff/imgs/serie.jpg");
+	background-size: cover;
+	height: 560px;
+    width: 441px;
+}
+.pelicula{
+	background-image: url("/AnimeStuff/imgs/pelicula.jpg");
+	background-size: cover;
+	height: 560px;
+    width: 441px;
+}
