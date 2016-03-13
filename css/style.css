@@ -33,14 +33,14 @@
 	padding: 0px;
 }
 .img-anime{
-	background-image: url("/AnimeStuff/imgs/OnePiece/principal-anime.jpg");
+	background-image: url("/AnimeStuff/images/OnePiece/principal-anime.jpg");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	background-position: -10px;
 }
 .img-manga{
-	background-image: url("/AnimeStuff/imgs/OnePiece/principal-manga.jpg");
+	background-image: url("/AnimeStuff/images/OnePiece/principal-manga.jpg");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
