@@ -1,3 +1,17 @@
+.grid{
+	padding: 0px;
+    height: 79%;
+}
+.grid li {
+	height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+figure{
+	height: 100%;
+    width: 100%;
+    padding: 0px;
+}
 .columna-componente{
 	/*border: 2px blue solid;*/
     height: 260px;
