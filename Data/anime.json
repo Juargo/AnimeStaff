@@ -1,10 +1,18 @@
 [{
 	"nombre": "One Piece",
-	"logo": "imgs/OnePiece/logochico.png",
+	"categorias":"Shonen",
 	"descripcion": "",
-	"ncapitulos":870,
-	"ntomos":80,
-	"categorias":"Shonen"
+	"tipo":[{
+			"nombre": "Anime",
+			"h3":"ver",
+			"img": "OnePiece/principal-anime.jpg",
+			"ncapitulos":733
+		},{
+			"nombre": "manga",
+			"h3":"leer",
+			"img": "OnePiece/principal-manga.jpg",
+			"ncapitulos":870
+		}]
 },
 {
 	"nombre":"Bleach"
