@@ -1,0 +1,14 @@
+<ul class="ch-grid" >
+	<li ng-repeat="data in datos">
+		<div class="ch-item" fondo-img="{{data.img}}">				
+			<div class="ch-info-wrap">
+				<a href="#/CatalogoPrincipal/{{data.option}}">
+					<div class="ch-info">
+						<div class="ch-info-front" fondo-img="{{data.img}}"></div>
+						<div class="ch-info-back"><h3>{{data.titulo}}</h3></div>	
+					</div>
+				</a>
+			</div>
+		</div>
+	</li>
+</ul>

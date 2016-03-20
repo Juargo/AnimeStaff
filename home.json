@@ -1,0 +1,14 @@
+[{
+	"titulo":"Anime y Manga",
+	"img":"anime.jpg",
+	"option":"anime"
+	},{
+	"titulo":"Series",
+	"img":"serie.jpg",
+	"option":"serie"
+	},
+	{
+	"titulo":"Películas",
+	"img":"pelicula.jpg",
+	"option":"pelicula"
+}]

@@ -1,0 +1,11 @@
+[{
+	"nombre": "One Piece",
+	"logo": "imgs/OnePiece/logochico.png",
+	"descripcion": "",
+	"ncapitulos":870,
+	"ntomos":80,
+	"categorias":"Shonen"
+},
+{
+	"nombre":"Bleach"
+}]

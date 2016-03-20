@@ -30,8 +30,11 @@
 			<div class="col-lg-1 columna-componente" ng-repeat="series in mangas">
 				<div class="panel panel-primary panel-componente">
 					<div class="panel-heading categorias-head">
-						<span class="label label-danger">Shonen</span>
-						<span class="label label-info">Comedia</span>
+						<span class="label label-danger">{{series.categorias}}</span>
+						<h3 style="
+    float: left;
+    margin: -4px;
+">{{series.nombre}}</h3>
 					</div>
 					<div class="panel-body body-series">
 						<div class="col-lg-6 serie-section anime-s" >
@@ -46,7 +49,7 @@
 								</li>
 							</ul>
   							<div class="panel-footer">
-  								<span class="label label-default">700</span>
+  								<span class="label label-default">{{series.ncapitulos}}</span>
   								<span class="label label-success"> </span>
   							</div>
 						</div>

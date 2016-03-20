@@ -1,11 +1,27 @@
-angular.module("AppCatalogo",[])
-	.controller("IndexController",function($scope,$http){
-		$http.get("Data/Tomos.json")
-		.success(function(data){
-				$scope.mangas = data;
-				console.log($scope.mangas);
+angular.module("AppPrincipal")
+.directive("fondoImg",function(){
+	return function(scope,element,attrs){
+		attrs.$observe('fondoImg',function(value){
+			element.css({
+				'background-image': "url('images/"+value+"')",
+				'background-size':'cover'
 			})
-		.error(function(err){
+		})
+	}
+})
+.controller("HomeController",function($scope,$http){
+	$scope.datos = [];
+	$http.get("home.json")
+		.success(function(data){
+			console.log(data);
+			$scope.datos = data;
+		})
+})
+.controller("CatalogoController",function($scope,$http,$routeParams){
+	$scope.animes = [];
+	$http.get("Data/"+$routeParams.option+".json")
+	.success(function(data){
+		$scope.animes = data;
+	})
 
-		});
-    });
+})
