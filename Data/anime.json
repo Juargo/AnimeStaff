@@ -15,5 +15,34 @@
 		}]
 },
 {
-	"nombre":"Bleach"
+	"nombre":"Bleach",
+	"categorias":"Shonen",
+	"descripcion": "",
+	"tipo":[{
+			"nombre": "Anime",
+			"h3":"ver",
+			"img": "Bleach/principal-anime.jpg",
+			"ncapitulos":733
+		},{
+			"nombre": "manga",
+			"h3":"leer",
+			"img": "Bleach/principal-manga.jpg",
+			"ncapitulos":870
+		}]
+},
+{
+	"nombre":"Naruto",
+	"categorias":"Shonen",
+	"descripcion": "",
+	"tipo":[{
+			"nombre": "Anime",
+			"h3":"ver",
+			"img": "Naruto/principal-anime.jpg",
+			"ncapitulos":733
+		},{
+			"nombre": "manga",
+			"h3":"leer",
+			"img": "Naruto/principal-manga.png",
+			"ncapitulos":870
+		}]
 }]
