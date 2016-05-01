@@ -1,0 +1,14 @@
+[
+{
+	"numero":1,
+	"saga": "Romance Down",
+	"img":"OnePiece/1.png",
+	"capitulos": [{
+		"numero": 1,
+		"nombre": "Romance Dawn – Amanecer de la aventura"
+	}, {
+		"numero": 2,
+		"nombre": "Ese chico, 'Luffy Sombrero de Paja'"
+	}]
+}
+]

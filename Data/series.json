@@ -1,0 +1,121 @@
+[{
+	"nombre": "One Piece",
+	"json":"OnePiece",
+	"categoriasprincipales":[
+		{"categoria":"Shonen"},
+		{"categoria":"Aventura"},
+		{"categoria":"accion"}
+	],
+	"categoriassecundarias":[
+		{"categoria":"comedia"},
+		{"categoria":"fantasia"}
+	],
+	"campos":[
+		{
+			"posee":"true",
+			"nombre": "Anime",
+			"h3":"ver",
+			"img": "OnePiece/principal-anime.jpg"
+		},{
+			"posee":"true",
+			"nombre": "manga",
+			"h3":"leer",
+			"img": "OnePiece/principal-manga.jpg"
+		}
+	]
+},
+{
+	"nombre":"Bleach",
+	"json":"Bleach",
+	"categoriasprincipales":[
+		{"categoria":"Shonen"},
+		{"categoria":"Drama"},
+		{"categoria":"accion"}
+	],
+	"categoriassecundarias":[
+		{"categoria":"comedia"},
+		{"categoria":"Sobrenatural"}
+	],
+	"campos":[{
+			"posee":"true",
+			"nombre": "Anime",
+			"h3":"ver",
+			"img": "Bleach/principal-anime.jpg"
+		},{
+			"posee":"true",
+			"nombre": "manga",
+			"h3":"leer",
+			"img": "Bleach/principal-manga.jpg"
+		}
+	]
+},
+{
+	"nombre":"Naruto",
+	"json":"Naruto",
+	"categoriasprincipales":[
+		{"categoria":"Shonen"},
+		{"categoria":"Aventura"},
+		{"categoria":"accion"}
+	],
+	"categoriassecundarias":[
+		{"categoria":"comedia"},
+		{"categoria":"fantasia"}
+	],
+	"campos":[{
+			"posee":"true",
+			"nombre": "Anime",
+			"h3":"ver",
+			"img": "Naruto/principal-anime.jpg"
+		},{
+			"posee":"true",
+			"nombre": "manga",
+			"h3":"leer",
+			"img": "Naruto/principal-manga.png"
+		}
+	]
+},
+{
+	"nombre":"TerraFormars",
+	"json":"TerraFormars",
+	"categoriasprincipales":[
+		{"categoria":"Gore"},
+		{"categoria":"CienciaFicción"},
+		{"categoria":"Acción"},
+		{"categoria":"Biopunk"}
+	],
+	"categoriassecundarias":[
+		{"categoria":"Horror"}
+	],
+	"campos":[{
+			"posee":"true",
+			"nombre": "Anime",
+			"h3":"ver",
+			"img": "Terraformars/principal-anime.jpg"
+		},{
+			"posee":"true",
+			"nombre": "manga",
+			"h3":"leer",
+			"img": "Terraformars/principal-manga.png"
+		}
+	]
+},
+{
+	"nombre":"Sangatsu no Lion",
+	"json":"SangatsunoLion",
+	"categoriasprincipales":[
+		{"categoria":"Seinen"},
+		{"categoria":"Drama"}
+	],
+	"campos":[
+		{
+			"posee":"",
+			"nombre": "Anime"
+		},{
+			"posee":"true",
+			"nombre": "manga",
+			"h3":"leer",
+			"img": "Sangatsu no Lion/principal-manga.jpg"
+		}
+	]
+}
+]

@@ -1,0 +1,17 @@
+<div class="well">
+	<div class="row" >
+		<div ng-repeat="series in globaldata">
+			<div class="col-lg-6 " style="
+    height: 412px;
+    width: 308px;
+">
+				<div catalogo-img="{{series.img}}"></div>
+			</div>
+			<div class="col-lg-6">
+				<li  ng-repeat="cap in series.capitulos">
+					<lu>Capítulo{{cap.numero}} : {{cap.nombre}}</lu>
+				</li>
+			</div>
+		</div>
+	</div>
+</div>

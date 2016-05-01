@@ -31,6 +31,26 @@ angular.module("AppPrincipal")
 })
 .controller("CatalogoController",function($scope,$http,$routeParams){
 	$scope.globaldata = [];
+	console.log($routeParams.option);
+	// $http.get("Data/"+$routeParams.option+".json")
+	$http.get("Data/series.json")
+	.success(function(data){
+		$scope.globaldata = data;
+	})
+
+})
+.controller("SeriesjapoController",function($scope,$http,$routeParams){
+	console.log($routeParams.option);
+	$scope.globaldata = [];
+	$http.get("Data/"+$routeParams.option+".json")
+	.success(function(data){
+		$scope.globaldata = data;
+	})
+
+})
+.controller("MangatomosController",function($scope,$http,$routeParams){
+	console.log($routeParams.option);
+	$scope.globaldata = [];
 	$http.get("Data/"+$routeParams.option+".json")
 	.success(function(data){
 		$scope.globaldata = data;

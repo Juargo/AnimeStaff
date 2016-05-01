@@ -1,0 +1,21 @@
+[{
+	"nombre":"OnePiece",
+	"campos":[{
+			"tipo": "Anime",
+			"img": "OnePiece/principal-anime.jpg",
+			"n":870,
+			"class":"panel-primary"
+		},{
+			"tipo": "Movie",
+			"img": "OnePiece/principal-anime-movie.png",
+			"n":13,
+			"class": "panel-success"
+		},
+		{
+			"tipo": "Ovas",
+			"img": "OnePiece/principal-anime-ovas.jpg",
+			"n":4,
+			"class": "panel-warning"
+		}
+	]
+}]

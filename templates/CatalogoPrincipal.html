@@ -3,24 +3,35 @@
 		<div class="panel panel-primary panel-componente">
 			<div class="panel-heading categorias-head">
 				<h3 style="margin-bottom: -4px;margin-top:-11px;font-family: 'Concert One';">{{series.nombre}}</h3>
-				<span class="label label-danger">{{series.categorias}}</span>
+				<div ng-repeat="catprincipal in series.categoriasprincipales">
+					<span class="label label-danger" style="float: left;">{{catprincipal.categoria}}</span>
+				</div>
+				<div ng-repeat="catsecundaria in series.categoriassecundarias">
+					<span class="label label-info" style="float: left;">{{catsecundaria.categoria}}</span>
+				</div>
+				<!-- <span class="label label-danger">{{series.categorias}}</span> -->
 			</div>
 			<div class="panel-body body-series">
-				<div class="col-lg-6 serie-section" style="float: left;" ng-repeat="detalles in series.tipo">
-					<ul class="grid cs-style-4" >
-						<li>
-							<figure >
-								<div catalogo-img="{{detalles.img}}"></div>
-								<figcaption>
-									<h3>{{detalles.h3}}</h3>
-								</figcaption>
-							</figure>
-						</li>
-					</ul>
-  					<div class="panel-footer">
+				<div class="col-lg-6 serie-section" style="float: left;" ng-repeat="detalles in series.campos">
+					<a href="#/CatalogoPrincipal/seriesjapo/{{detalles.nombre}}_{{series.json}}">
+						<ul class="grid cs-style-4" ng-if="detalles.posee">
+							<li>
+								<figure >
+									<div catalogo-img="{{detalles.img}}"></div>
+									<figcaption>
+										<h3>{{detalles.h3}}</h3>
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</a>
+					<div ng-if="!detalles.posee">
+						<h3>No tiene {{detalles.nombre}}</h3>
+					</div>
+<!--   					<div class="panel-footer">
   						<span class="label label-default">{{detalles.ncapitulos}}</span>
   						<span class="label label-success"> </span>
-  					</div>
+  					</div> -->
 				</div>
 			</div>
 		</div>
